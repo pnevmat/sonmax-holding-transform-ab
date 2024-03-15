@@ -1,12 +1,16 @@
 .masterclassProgramContainer {
   width: 100%;
+  background-color: #010101;
+}
+
+.masterclassProgramWrapper {
+  position: relative;
   padding-top: 89px;
   padding-left: 358px;
   padding-bottom: 140px;
   margin-right: auto;
   margin-left: auto;
   text-align: left;
-  background-color: #010101;
 }
 
 .masterclassProgramTitle {
@@ -148,7 +152,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     padding-top: 30px;
     padding-bottom: 50px;
     padding-left: 0;
@@ -220,6 +224,10 @@
 }
 
 @media screen and (max-width: 339px) {
+  .masterclassProgramWrapper {
+    max-width: 320px;
+  }
+
   .masterclassProgramListContainer {
     max-width: 260px;
   }
@@ -234,6 +242,10 @@
 }
 
 @media screen and (min-width: 340px) and (max-width: 359px) {
+  .masterclassProgramWrapper {
+    max-width: 340px;
+  }
+
   .masterclassProgramListContainer {
     max-width: 280px;
   }
@@ -248,6 +260,10 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 379px) {
+  .masterclassProgramWrapper {
+    max-width: 360px;
+  }
+
   .masterclassProgramListContainer {
     max-width: 300px;
   }
@@ -262,6 +278,10 @@
 }
 
 @media screen and (min-width: 380px) and (max-width: 419px) {
+  .masterclassProgramWrapper {
+    max-width: 380px;
+  }
+
   .masterclassProgramListContainer {
     max-width: 320px;
   }
@@ -276,12 +296,15 @@
 }
 
 @media screen and (min-width: 420px) and (max-width: 767px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 420px;
   }
 
   .masterclassProgramListContainer {
+    display: block;
     max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .masterclassProgramListCard {
@@ -294,7 +317,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 743px;
     padding-left: 25px;
   }
@@ -314,7 +337,7 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 974px;
     padding-left: 50px;
   }
@@ -334,7 +357,7 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1359px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 1230px;
     padding-left: 50px;
   }
@@ -354,7 +377,7 @@
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1699px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 1260px;
     padding-left: 100px;
   }
@@ -374,13 +397,26 @@
 }
 
 @media screen and (min-width: 1700px) and (max-width: 1919px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 1342px;
+  }
+
+  .masterclassProgramListContainer {
+    width: 100%;
+    max-width: 1120px;
+  }
+
+  .masterclassProgramListWrapper {
+    grid-template-columns: 49.5% 49.5%;
   }
 }
 
 @media screen and (min-width: 1920px) {
-  .masterclassProgramContainer {
+  .masterclassProgramWrapper {
     max-width: 1562px;
+  }
+
+  .masterclassProgramListWrapper {
+    grid-template-columns: 49.5% 49.5%;
   }
 }

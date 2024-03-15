@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 600;
   src: local('Proxima Nova SemiBold'), local('Proxima-Nova-SemiBold'),
-    url('../../fonts/proxima-nova/ProximaNovaBold.woff') format('woff');
+    url('../../fonts//proxima-nova/ProximaNovaBold.woff') format('woff');
 }
 
 @font-face {
@@ -19,5 +19,5 @@
   font-style: normal;
   font-weight: bold;
   src: local('Proxima Nova Bold'), local('Proxima-Nova-Bold'),
-    url('../../fonts/proxima-nova/ProximaNovaBlack.woff') format('woff');
+    url('../../fonts//proxima-nova/ProximaNovaBlack.woff') format('woff');
 }
