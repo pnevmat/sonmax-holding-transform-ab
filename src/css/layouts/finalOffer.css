@@ -48,6 +48,16 @@
   background-color: #fff401;
 }
 
+.finalOfferSelect {
+  position: relative;
+}
+
+.finalOfferSelectHeader {
+  display: flex;
+  height: 20px;
+  cursor: pointer;
+}
+
 .finalOfferInput {
   width: 92%;
   padding: 20px;
@@ -69,6 +79,36 @@
 
 .finalOfferInput:focus {
   outline: none;
+}
+
+.selectCurrent {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00000080;
+}
+
+.selectBody {
+  position: absolute;
+  top: 100%;
+  left: 2%;
+  width: 96%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #ffffff;
+}
+
+.selectItem {
+  padding: 8px;
+  height: 24px;
+  color: #000000;
+}
+
+.selectItem:hover {
+  background-color: #fff401;
+  cursor: pointer;
 }
 
 .finalOfferButton {
