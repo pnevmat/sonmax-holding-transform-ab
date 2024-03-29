@@ -322,6 +322,8 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .finalOfferWrapper {
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
     max-width: 974px;
     padding-left: 50px;
@@ -329,7 +331,26 @@
 
   .finalOfferTextContainer {
     width: 100%;
-    max-width: 552px;
+    max-width: 752px;
+  }
+
+  .finalOfferTextContainer > span {
+    display: inline-block;
+    max-width: 700px;
+  }
+
+  .finalOfferTextWrapper {
+    max-width: 700px;
+  }
+
+  .arrowPc {
+    display: none;
+  }
+
+  .arrowMobile {
+    display: block;
+    width: 49px;
+    height: 67px;
   }
 
   .finalOfferForm {
