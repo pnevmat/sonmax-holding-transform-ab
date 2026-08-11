@@ -1,3 +1,5 @@
+@use '../utils/mixins';
+
 .header {
   width: 100%;
 }
@@ -116,7 +118,7 @@
 }
 
 .instaStatsPng {
-  width: 23.5%;
+  width: 100%;
 }
 
 .youGetBlockContainer {
@@ -209,7 +211,7 @@
   }
 
   .logo,
-  .logo > img {
+  .logo > picture > img {
     width: 73px;
     height: 63px;
   }
@@ -348,7 +350,7 @@
 
 @media screen and (max-width: 767px) {
   .background {
-    background-image: url('../../images//header-man-background.png');
+		@include mixins.responsive-bg('../images/header-man-background', 'png');
   }
 }
 
@@ -480,12 +482,12 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    background-image: url('../../images/header-background.png');
+		@include mixins.responsive-bg('../images/header-background', 'png');
     background-size: cover;
   }
 
   .background {
-    background-image: url('../../images//header-man-background.png');
+		@include mixins.responsive-bg('../images/header-man-background', 'png');
   }
 
   .masterclassContainer {
@@ -498,7 +500,7 @@
   }
 
   .logo,
-  .logo > img {
+  .logo > picture > img {
     width: 65px;
     height: 56px;
   }
@@ -602,7 +604,7 @@
   }
 
   .youGetImg {
-    max-width: 100px;
+    max-width: 130px;
   }
 
   .youGetBoldText {
@@ -656,6 +658,11 @@
     width: 23.5%;
     height: 72px;
   }
+
+	.youGetImgContainer > picture {
+		width: 100%;
+		height: 100%;
+	}
 
   .youGetImg {
     position: relative;

@@ -164,6 +164,9 @@
 
   .masterclassProgramTitle {
     padding-left: 30px;
+		font-size: 34px;
+		line-height: 29px;
+		text-transform: uppercase;
   }
 
   .masterclassProgramListContainer {
@@ -320,7 +323,17 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+	.questionsContainer > picture {
+		text-align: right;
+	}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+	.instaStatsPng {
+		width: 62%;
+	}
+
   .masterclassProgramWrapper {
     max-width: 743px;
     padding-left: 25px;
@@ -341,6 +354,10 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+	.instaStatsPng {
+		width: 85%;
+	}
+
   .masterclassProgramWrapper {
     max-width: 974px;
     padding-left: 50px;
